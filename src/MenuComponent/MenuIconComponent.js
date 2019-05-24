@@ -10,7 +10,7 @@ export default class MenuIcon extends Component{
             style={{width:30,height:30,zIndex:2,position:'absolute',top:10,left:10}}
             onPress= {()=>{this.props.navigation.toggleDrawer();}}
         >
-        <Icon name={'ios-menu'} size={30} color={'gray'} />
+        <Icon name={'ios-menu'} size={30} color={'#e8eaed'} />
         </TouchableOpacity>
       )
     }

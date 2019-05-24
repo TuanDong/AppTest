@@ -43,7 +43,7 @@ const MenuMaterialBottomComponent = createMaterialBottomTabNavigator({
             title: 'Nofitications',
             tabBarIcon: ({ tintColor, focused }) => (
                 <View>
-                <Icon size={30} name={`ios-notifications${focused ? '' : '-outline'}`} style={{ color: tintColor }} />
+                <Icon size={30} name={`ios-notifications${focused ? '-off' : ''}`} style={{ color: tintColor }} />
                 <View style={{
                     position: 'absolute',
                     right: -8,

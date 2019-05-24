@@ -14,7 +14,7 @@ class MenuDrawerComponent extends Component {
                 style={{ flexDirection: "row", alignItems: "center", marginBottom: 5 }}
                 onPress={() => {this.props.navigation.navigate(routeName); this.props.navigation.toggleDrawer(); }}
             >
-                <Icon name={(routeName == 'Home') ? 'ios-home' : 'ios-settings'} size={30} color={'#512E5F'} />
+                <Icon name={(routeName == 'Profile') ? 'ios-people' : 'ios-settings'} size={30} color={'#512E5F'} />
                 <Text style={styleDrawer.link}>
                     {text}
                 </Text>
@@ -37,7 +37,7 @@ class MenuDrawerComponent extends Component {
                     </View>
                 </ImageBackground>
                 <View style={styleDrawer.bottomDrawer}>
-                    {this.menuLink('Home', 'Home')}
+                    {this.menuLink('Profile', 'Profile')}
                     {this.menuLink('settings', 'Setting')}
                     <TouchableOpacity
                         style={{ flexDirection: "row", alignItems: "center", marginBottom: 5 }}

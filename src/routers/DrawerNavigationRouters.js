@@ -8,7 +8,7 @@ import settings from './../components/settings'
 
 const {width} = Dimensions.get('window');
 const MyDrawerNavigator = createDrawerNavigator({
-    Home: {
+    Profile: {
         screen: MainComponent,
     },
     settings:{
@@ -17,7 +17,7 @@ const MyDrawerNavigator = createDrawerNavigator({
 
 },
 {
-    initialRouteName:'Home',
+    initialRouteName:'Profile',
     drawerWidth:(width *3)/4,
     drawerPosition:'let',
     contentComponent:({navigation})=>{
