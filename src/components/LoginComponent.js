@@ -19,8 +19,8 @@ class LoginComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: '',
-            pass: '',
+            username: 'TuanDong',
+            pass: 'TuanDong',
             status: true,
         }
         this.CheckLogin = this.CheckLogin.bind(this);
